@@ -1,0 +1,23 @@
+.pokemon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(to bottom right ,yellow, rgb(0, 0, 255));
+  min-width: 25%;
+  border: 1px gray solid;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.pokemon-image {
+  width: 40%;
+  margin: 10px;
+ }
+
+ .pokemon-information {
+   width: 40%;
+   font-size: 20px;
+   padding: 15px;
+ }
+
+ 

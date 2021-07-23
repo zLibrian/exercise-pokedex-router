@@ -1,0 +1,18 @@
+.pokedex {
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  width: 80%;
+}
+
+.pokedex-section {
+  display: flex;
+  justify-content: space-around;
+  min-height: 100vh;
+  background-image: url(https://gamespot1.cbsistatic.com/uploads/original/1552/15524586/3013407-screen%20shot%202016-02-26%20at%2012.40.14%20pm.png);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
