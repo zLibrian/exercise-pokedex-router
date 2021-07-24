@@ -1,15 +1,30 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types';
 
 class PokemonFoundAt extends Component {
   render() {
-    const mapa = this.props.pokemon.foundAt;
-    return mapa.map((mapinha) => (
-      <ul key={mapinha.location}>
-        <li>{mapinha.location}</li>
-        <img src={mapinha.map}></img >
-      </ul>
-    ))
+    const { foundAt, moreInfo, name } = this.props.pokemon;
+    return (
+      <ol classname="pokemonDetails">
+        { foundAt.map((locationInfo) => (
+          <>
+            <li>{ locationInfo.location }</li>
+            <img
+              src={ locationInfo.map }
+              alt={ `${locationInfo.location} map` }
+            />
+          </>
+        ))}
+        <a
+          href={ moreInfo }
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Everything about {name}
+        </a>
+      </ol>
+    );
   }
-}
+};
 
-export default PokemonFoundAt
+export default PokemonFoundAt;
