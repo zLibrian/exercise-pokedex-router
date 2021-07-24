@@ -1,8 +1,9 @@
 import React from 'react';
 import { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import './App.css';
 import Home from './pages/Home';
+import PokemonDetails from './pages/pokemonDetails/PokemonDetails';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={ Home } />
+          <Route path="/pokemonDetails/:idPokemon" component={ PokemonDetails }/>
         </Switch>      
       </BrowserRouter>
       </div>

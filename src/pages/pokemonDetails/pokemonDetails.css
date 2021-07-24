@@ -1,0 +1,7 @@
+.pokemonDetails {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  /* background-color: red; */
+}

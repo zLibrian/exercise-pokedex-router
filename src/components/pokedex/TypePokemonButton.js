@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from './components/genericComponents/Button/Button';
+import Button from '../genericComponents/Button/Button';
 
 class TypePokemonButton extends Component {
   typePokemonButton(type) {
@@ -9,6 +9,7 @@ class TypePokemonButton extends Component {
         onClick={ filterPokemons }
         text={ type }
         buttonClass="filterPokemons"
+        key={ type }
       />
     );
   }
@@ -20,7 +21,12 @@ class TypePokemonButton extends Component {
         <section className="filter-pokemons-button">
           {types.map((type) => this.typePokemonButton(type))}
         </section>
-        <Button onClick={ nextPokemon } text="Next Pokemon" pokemonsLength={pokemonsLength} buttonClass="nextPokemon" />
+        <Button
+          onClick={ nextPokemon }
+          text="Next Pokemon"
+          pokemonsLength={pokemonsLength}
+          buttonClass="nextPokemon"
+        />
       </div>
     );
   }

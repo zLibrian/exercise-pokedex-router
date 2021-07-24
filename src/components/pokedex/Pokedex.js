@@ -1,6 +1,6 @@
 import React from 'react';
 import Pokemon from '../pokemon/Pokemon';
-import TypePokemonButton from '../../TypePokemonButton';
+import TypePokemonButton from './TypePokemonButton';
 import './pokedex.css';
 
 class Pokedex extends React.Component {
