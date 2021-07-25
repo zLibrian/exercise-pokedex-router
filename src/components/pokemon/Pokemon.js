@@ -5,9 +5,9 @@ import './pokemon.css';
 
 class Pokemon extends React.Component {
   render() {
-    const { name, type, averageWeight, image, id } = this.props.pokemon;
+    const { pokemon: { name, type, averageWeight, image, id, favorite }, className } = this.props;
     return (
-      <div className="pokemon">
+      <div className={className}>
       	<div className="pokemon-information">
         	<p> {name} </p>
         	<p> {type} </p>
@@ -15,6 +15,9 @@ class Pokemon extends React.Component {
           <p> <Link to={`pokemonDetails/${id}`}>More Datails</Link> </p>
         </div>
         <img className="pokemon-image" src={image} alt={`${name} sprite`} />
+				<div className="favIcon">
+          {favorite && <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4gcbF95XQZIdoYdBDDTkInFK_OGyFEwVAkQ&usqp=CAU"/>}
+        </div>
       </div>
   	);
 	}

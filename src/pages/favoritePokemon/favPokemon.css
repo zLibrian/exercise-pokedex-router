@@ -1,20 +1,8 @@
-.pokemonDetails {
-  width: 80%;
+.favPokemons {
   display: flex;
+  flex-flow: wrap row;
+  flex: 1 1 auto;
   justify-content: center;
-  margin: auto;
-}
-
-.favIcon {
-  width: 50px;
-  align-self: flex-start;
-  justify-self: flex-start;
-  margin-top: 20px;
-  margin-right: 10px;
-}
-
-.favIcon img {
-  width: 50px;
 }
 
 .favPokemon {
@@ -27,4 +15,9 @@
   border-radius: 10px;
   max-width: 50%;
   margin: 40px;
+}
+
+.favPokemon:hover {
+  transform: scale(1.1);
+  transition-duration: 0.4s;
 }

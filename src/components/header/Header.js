@@ -1,11 +1,23 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './header.css';
 
 class Header extends Component {
   render() {
     return(
       <header className="header">
-        <h1> Pokedex </h1>
+        <h1>Pokedex</h1>
+        <nav className="navHeader">
+          <p>
+            <Link to="/"> Home </Link>
+          </p>
+          <p>
+            <Link to="/aboutPokedex"> About Pokedex </Link>
+          </p>
+          <p>
+            <Link to="/favoritePokemons"> Favorite Pokemons </Link>
+          </p>
+        </nav>
       </header>
     );
   }

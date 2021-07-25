@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
 import Pokedex from '../components/pokedex/Pokedex';
-import Header from '../components/header/Header';
-import pokemons from '../data';
+import data from '../data';
 
 
 class Home extends Component {
   render() {
+    const pokemons = JSON.parse(localStorage.getItem('pokemons')) || data;
     return (
-      <>
-        <Header />
-        <Pokedex pokemons={ pokemons } />
-      </>
+      <Pokedex pokemons={ pokemons } />
     );
   }
 }

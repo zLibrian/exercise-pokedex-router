@@ -1,4 +1,26 @@
 .header {
+  align-items: center;
   background-image: linear-gradient( to right, yellow, red);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
   padding: 10px;
+}
+
+.navHeader {
+  display: flex;
+  flex-flow: wrap row;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+  font-size: 20px;
+  width: 40%;
+}
+
+.navHeader a {
+  text-decoration: none;
+  color: white;
+}
+
+.navHeader a:hover {
+  color: black;
 }

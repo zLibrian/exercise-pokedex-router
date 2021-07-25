@@ -78,7 +78,7 @@ class Pokedex extends React.Component {
     return (
       <section className="pokedex-section">
         <div className="pokedex">
-          <Pokemon key={ pokemon.id} pokemon={pokemon} />
+          <Pokemon key={ pokemon.id} pokemon={pokemon} className="pokemon" />
           <TypePokemonButton
             types={types}
             filterPokemons={this.filterPokemon}

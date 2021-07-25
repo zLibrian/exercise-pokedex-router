@@ -7,15 +7,16 @@ class PokemonFoundAt extends Component {
     return (
       <ol classname="pokemonDetails">
         { foundAt.map((locationInfo) => (
-          <>
+          <div className="locationDetails">
             <li>{ locationInfo.location }</li>
             <img
               src={ locationInfo.map }
               alt={ `${locationInfo.location} map` }
             />
-          </>
+          </div>
         ))}
         <a
+          className="aboutPokemon"
           href={ moreInfo }
           target="_blank"
           rel="noopener noreferrer"
@@ -25,6 +26,6 @@ class PokemonFoundAt extends Component {
       </ol>
     );
   }
-};
+}
 
 export default PokemonFoundAt;
