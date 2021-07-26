@@ -12,10 +12,10 @@ class Header extends Component {
             <Link to="/"> Home </Link>
           </p>
           <p>
-            <Link to="/aboutPokedex"> About Pokedex </Link>
+            <Link to="/pokedex/aboutPokedex"> About Pokedex </Link>
           </p>
           <p>
-            <Link to="/favoritePokemons"> Favorite Pokemons </Link>
+            <Link to="/pokedex/favoritePokemons"> Favorite Pokemons </Link>
           </p>
         </nav>
       </header>

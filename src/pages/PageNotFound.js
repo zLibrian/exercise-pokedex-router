@@ -5,7 +5,7 @@ export class PageNotFound extends Component {
     return (
       <div className="not-found">
         <h2>
-          Page requested not found
+          Requested page not found
       <span role="img" aria-label="Crying emoji"> 😭 </span>
         </h2>
         <img

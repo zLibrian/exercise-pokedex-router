@@ -22,10 +22,10 @@ class App extends Component {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/pokemonDetails/:idPokemon" component={ PokemonDetails } />
           <Route exact path="/" component={ Home } />
-          <Route path="/aboutPokedex" component={ AboutPokedex } />
-          <Route path="/favoritePokemons" component={ FavoritePokemons } />
+          <Route path="/pokedex/aboutPokedex" component={ AboutPokedex } />
+          <Route path="/pokedex/favoritePokemons" component={ FavoritePokemons } />
+          <Route path="/pokedex/pokemonDetails/:idPokemon" component={ PokemonDetails } />
           <Route component={ PageNotFound }/>
         </Switch>
       </BrowserRouter>

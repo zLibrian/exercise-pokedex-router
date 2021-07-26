@@ -43,7 +43,7 @@ class PokemonDetails extends Component {
   renderAllDetails(pokemon) {
     const { favorite } = this.state;
     return (
-      <div>
+      <div className="sectionFavPokemon">
         <Details pokemon={ pokemon } favoritePokemon={favorite} />
         <PokemonSummary pokemon={ pokemon } />
         <PokemonFoundAt pokemon={ pokemon } />

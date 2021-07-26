@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 
 class PokemonFoundAt extends Component {
   render() {
-    const { foundAt, moreInfo, name } = this.props.pokemon;
+    const { pokemon: { foundAt, moreInfo, name } } = this.props;
     return (
-      <ol classname="pokemonDetails">
+      <section classname="pokemonDetails">
         { foundAt.map((locationInfo) => (
           <div className="locationDetails">
-            <li>{ locationInfo.location }</li>
+            <p>{ locationInfo.location }</p>
             <img
               src={ locationInfo.map }
               alt={ `${locationInfo.location} map` }
@@ -23,7 +23,7 @@ class PokemonFoundAt extends Component {
         >
           Everything about {name}
         </a>
-      </ol>
+      </section>
     );
   }
 }
