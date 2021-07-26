@@ -22,7 +22,11 @@ class App extends Component {
       <BrowserRouter>
         <Header />
         <Switch>
+<<<<<<< HEAD
           <Route exact path="/" component={ Home } />
+=======
+          <Route exact path="/pokedex" component={ Home } />
+>>>>>>> 3370896e3d6b768e5415863f14de8ab689d69666
           <Route path="/pokedex/aboutPokedex" component={ AboutPokedex } />
           <Route path="/pokedex/favoritePokemons" component={ FavoritePokemons } />
           <Route path="/pokedex/pokemonDetails/:idPokemon" component={ PokemonDetails } />
