@@ -9,7 +9,7 @@ class Header extends Component {
         <h1>Pokedex</h1>
         <nav className="navHeader">
           <p>
-            <Link to="/pokedex"> Home </Link>
+            <Link to="/"> Home </Link>
           </p>
           <p>
             <Link to="/pokedex/aboutPokedex"> About Pokedex </Link>
